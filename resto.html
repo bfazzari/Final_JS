@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ÂLA§KA RËSTÕ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.1/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- ////////////////BARRA NAV///////////////////////////////// -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="#">ÂLA§KA RËSTÕ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Gaseosas">GASEOSAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#VinosTintos">VINOS TINTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#VinosBlancos">VINOS BLANCOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Comida">COMIDAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Postres">POSTRES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="btnVerPromos" href="#">VER PROMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">CUPONES %</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btnVerCarrito" id="btnVerCarrito" href="#">VER CARRITO</a>
+                    </li>
+                </ul>
+                <div id="dollarData"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="contenedorGeneral">
+        <div class="row">
+            <div class="col-8">
+                <!-- ////////////////GASEOSAS///////////////////////////////// -->
+                <div class="container text-center my-4">
+                    <hr class="lineaGruesa">
+                    <h2 class="etiquetas" id="Gaseosas">GASEOSAS</h2>
+                    <div class="row justify-content-left">
+                        <div class="col-md-4 mb-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://cdnx.jumpseller.com/dc-central-distribuidora-de-licores/image/11707408/resize/540/540?1648115941"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sprite</h5>
+                                    <p class="card-text">$1500</p>
+                                    <a href="#" class="btn btnAgregar">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://png.pngtree.com/png-clipart/20231116/original/pngtree-cocacola-can-resting-on-a-blank-photo-png-image_13582802.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Coca Cola</h5>
+                                    <p class="card-text">$1500</p>
+                                    <a href="#" class="btn btnAgregar">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://pngimg.es/d/fanta_PNG17.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fanta</h5>
+                                    <p class="card-text">$1100</p>
+                                    <a href="#" class="btn btnAgregar">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ////////////////AGUA///////////////////////////////// -->
+                <div class="container text-center my-4">
+                    <hr class="lineaGruesa">
+                    <h2 class="etiquetas">AGUAS</h2>
+
+                    <div class="row justify-content-left">
+                        <div class="col-md-4 mb-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://gematic.adhoc.ar/web/image/product.template/2338/image_1024?unique=a13bc63"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Agua Sin gas</h5>
+                                    <p class="card-text">$1100</p>
+                                    <a href="#" class="btn btnAgregar">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://dcdn.mitiendanube.com/stores/002/287/525/products/321-aab071432171288c8416620599549497-480-0.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Agua Con gas</h5>
+                                    <p class="card-text">$1100</p>
+                                    <a href="#" class="btn btnAgregar">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ////////////////VINOS///////////////////////////////// -->
+                <!--TINTOS -->
+                <div class="container text-center my-4">
+                    <hr class="lineaGruesa">
+                    <h2 class="etiquetas">VINOS</h2>
+                    <hr>
+                    <h3 id="VinosTintos">TINTOS</h3>
+                    <div class="container text-center my-4">
+                        <div class="row justify-content-left">
+                            <div class="col-md-4 mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://www.vitvin.com.ar/wp-content/uploads/2024/06/RUTINI-SINGLE-VINEYARD-GUALTA-CAB-FRANC.png"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Rutini</h5>
+                                        <h6>Malbec</h6>
+                                        <p class="card-text">$10500</p>
+                                        <a href="#" class="btn btnAgregar">Agregar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://truvaribebidas.com.ar/wp-content/uploads/2024/01/luigi-bosca-malbec.png"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Luigi Bosca</h5>
+                                        <h6>Syrah</h6>
+                                        <p class="card-text">$8700</p>
+                                        <a href="#" class="btn btnAgregar">Agregar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://www.vinoselkiosco.com/wp-content/uploads/2021/05/El_Enemigo_Malbec-edited.png"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">El Enemigo</h5>
+                                        <h6>Cabernet</h6>
+                                        <p class="card-text">$5700</p>
+                                        <a href="#" class="btn btnAgregar">Agregar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://acdn.mitiendanube.com/stores/087/677/products/edelmira_malbec1-99ffb4416a897f0a6e16204152229265-640-0.png"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">EDELMIRA</h5>
+                                        <h6>Syrah</h6>
+                                        <p class="card-text">$5700</p>
+                                        <a href="#" class="btn btnAgregar">Agregar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://monteviejo.com.ar/wp-content/uploads/2024/05/PETITE-FLEUR-BLEND.png"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Petite</h5>
+                                        <h6>Syrah</h6>
+                                        <p class="card-text">$8700</p>
+                                        <a href="#" class="btn btnAgregar">Agregar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--BLANCO -->
+                <div class="container text-center my-4">
+                    <h3 id="VinosBlancos">BLANCOS</h3>
+                    <hr>
+                    <div class="container text-center my-4">
+                        <div class="row justify-content-left">
+                            <div class="col-md-4 mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://acdn.mitiendanube.com/stores/087/677/products/sauvignon_blanc1-6530b2a18fbc815fc716732746810515-640-0.png"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">El pendorcho</h5>
+                                        <h6>sauvignon_blanc</h6>
+                                        <p class="card-text">$10500</p>
+                                        <a href="#" class="btn btnAgregar">Agregar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://dcdn.mitiendanube.com/stores/503/976/products/callia-sauvignon-blanc-transparente1-2310e87015282dc30f16802110151743-480-0.png"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Callia</h5>
+                                        <h6>sauvignon-blanc</h6>
+                                        <p class="card-text">$8700</p>
+                                        <a href="#" class="btn btnAgregar">Agregar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://acdn.mitiendanube.com/stores/001/211/660/products/photoroom_20220531_1245181-ef23171928a31a3f8216540120084978-640-0.png"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Santa Julia</h5>
+                                        <h6>Cabernet Sauvignon</h6>
+                                        <p class="card-text">$5700</p>
+                                        <a href="#" class="btn btnAgregar">Agregar</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- ////////////////COMIDA///////////////////////////////// -->
+                <div class="container text-center my-4">
+                    <hr class="lineaGruesa">
+                    <h2 class="etiquetas" id="Comida">COMIDA</h2>
+
+                    <div class="row justify-content-left">
+                        <div class="col-md-4 mb-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://pita-grill.ca/wp-content/uploads/2020/05/Lamb-Shawarma.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Shawarma</h5>
+                                    <p class="card-text">$8000</p>
+                                    <a href="#" class="btn btnAgregar">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://www.sopraval.cl/wp-content/uploads/2019/02/007_choripan_aldea.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Choripan</h5>
+                                    <p class="card-text">$5000</p>
+                                    <a href="#" class="btn btnAgregar">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://www.comedera.com/wp-content/uploads/2018/08/empanadas-argentinas.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Empanada</h5>
+                                    <p class="card-text">$5000</p>
+                                    <a href="#" class="btn btnAgregar">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://i0.wp.com/latinbodeguitas.com/wp-content/uploads/2021/03/traditeke.png?fit=668%2C600&ssl=1"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tequeño</h5>
+                                    <p class="card-text">$3600</p>
+                                    <a href="#" class="btn btnAgregar">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://media.c5n.com/p/85869a1fd13c6428e438a621203f3445/adjuntos/326/imagenes/000/205/0000205496/790x0/smart/vasco-frances.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Paella</h5>
+                                    <p class="card-text">$5000</p>
+                                    <a href="#" class="btn btnAgregar">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://www.lapizzoleriacatania.it/wp-content/uploads/2024/02/tagliere-piccolo-salumi-e-formaggi-4-1024x683.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Picada</h5>
+                                    <p class="card-text">$10000</p>
+                                    <a href="#" class="btn btnAgregar">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://restaurantlespedretes.com/wp-content/uploads/2019/10/macarrons-plats.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fideos</h5>
+                                    <p class="card-text">$3000</p>
+                                    <a href="#" class="btn btnAgregar">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ////////////////POSTRES///////////////////////////////// -->
+                <div class="container text-center my-4">
+                    <hr class="lineaGruesa">
+                    <h2 class="etiquetas" id="Postres">POSTRES</h2>
+
+                    <div class="row justify-content-left">
+                        <div class="col-md-4 mb-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://asadoravelino.com/wp-content/uploads/2020/11/trta-min.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chocotorta</h5>
+                                    <p class="card-text">$8000</p>
+                                    <a href="#" class="btn btnAgregar">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://static.wixstatic.com/media/9f710e_58a1ad491c1c45498c0732df70b6ec69~mv2.png/v1/fill/w_560,h_324,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/9f710e_58a1ad491c1c45498c0732df70b6ec69~mv2.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Helado</h5>
+                                    <p class="card-text">$3000</p>
+                                    <a href="#" class="btn btnAgregar">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://www.vhv.rs/dpng/d/68-686269_cheesecake-de-fresa-vips-hd-png-download.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cheese Cake</h5>
+                                    <p class="card-text">$5000</p>
+                                    <a href="#" class="btn btnAgregar">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- TARJETA PRODUCTOS -->
+            <div class="sidePrecios col-3 container text-left" id="cartasProductos">
+                <h2>Su pedido</h2>
+                <h3>Total: <span id="totalCarrito">$0</span></h3>
+                <hr>
+                <div id="dataCarrito"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre Nosotros</h5>
+                    <p>Somos un restaurante dedicado a ofrecer la mejor experiencia culinaria con ingredientes frescos y
+                        recetas únicas.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <p> Dirección: La normalita 123, CABA</p>
+                        <p> Teléfono: (123) 456-7890</p>
+                        <p> Email: info@alaskaresto.com</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-secondary text-center py-3">
+            <p class="mb-0">&copy; 2023 Alaska Resto. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.1/dist/sweetalert2.all.min.js"></script>
+    <script src="alertas.js"></script>
+</body>
+
+</html>

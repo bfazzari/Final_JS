@@ -1,0 +1,126 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:white;
+    background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
+    linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%);
+    background-size:50px 50px;
+  }
+
+  .btnVerCarrito{
+    color: white;
+
+  }
+
+  .etiquetas{
+    --s: 20px; /* control the shape */
+  
+    line-height: 1.8; /* control the height */
+    padding-inline: calc(var(--s) + .3em);
+    clip-path: polygon(0 0,calc(100% - var(--s)) 0,100% 50%,calc(100% - var(--s)) 100%,0 100%,var(--s) 50%);
+    background: #fafafa;
+    width: fit-content;
+  }
+
+  .contenedorGeneral{
+    padding-top: 50px;
+  }
+
+  #cartasProductos{
+    position: fixed;
+    right: 140px;
+    top: 56px;
+    overflow-y: scroll;
+    height: 90%;
+    margin: 0;
+    padding: 0 20px;    
+  }
+
+.imgProd{
+    width: 100px;
+    height: auto;
+}
+  .logo{
+    margin-right: 50px;
+  }
+  .LinkContacto{
+    color: #333;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+  .lineaGruesa{
+    color: rgb(255, 255, 255);
+    border: solid 5px;
+    border-radius: 10px;
+  }
+
+.card{
+    border-radius: 10px;
+    /* margin: 5px; */
+    /* border-color: rgb(255, 137, 77); */
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+}
+.card-img-top{
+    max-width: 100px;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.navbar{
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+    width: 100%;
+    /* margin: 0 10px; */
+    /* border-radius: 50px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.sidePrecios{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 100px;
+    background-color: white;
+}
+
+li{
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: #ffab66;
+    margin: 0 10px;
+    border: 0 10px;
+    padding: 0 20px;
+}
+
+h2{
+    text-align: left;
+    font-size: 25px;
+    font-weight: normal;
+    margin: 35px 0  20px 0;
+}
+h3{
+    text-align: left;
+    font-size: 20px;
+    font-weight:normal;
+    margin: 35px 0  20px 0;
+}
+.btn{
+    font-weight: 500;
+    color: white;
+    background-color: #ff894d;
+}
+.btn:hover{
+    font-weight: 500;
+    color: white;
+    background-color: rgb(194, 65, 65);
+}
+.row{
+    margin-right: 0;
+}
